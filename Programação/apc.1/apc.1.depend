@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1655145810 source:c:\users\mathe\desktop\pasta das pastas\puc\trabalhos\programação\apc.1\main.c
+	<stdio.h>
+	<ctype.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+
+1655145635 source:c:\users\mathe\desktop\pasta das pastas\puc\trabalhos\programação\apc.1\anagrama.c
+	<stdio.h>
+	<ctype.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+

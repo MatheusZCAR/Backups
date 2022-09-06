@@ -1,0 +1,42 @@
+///EX 01, 27 de Abril
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#define PI 3.14
+
+
+float volume_cilindro (float r, float h){
+
+r = r * r;
+float fvolume = PI * r * h;
+
+return fvolume;
+}
+
+
+
+int main()
+{
+    float alt, raio, volume;
+
+    printf("==============================================\n");
+    printf("Calculadora de Volume de um Cilindro");
+    printf("\n==============================================\n");
+
+    printf("Raio da base:");
+    scanf("%f", &raio);
+
+    printf("\nAltura:");
+    scanf("%f", &alt);
+
+    printf("==============================================\n");
+
+    volume = volume_cilindro (raio, alt);
+
+    printf("Volume do Cilindro = %.2f", volume);
+
+    printf("\n==============================================");
+    printf("\n\n\n");
+
+    return 0;
+}

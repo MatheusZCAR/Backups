@@ -1,0 +1,95 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#define tam 31
+void comparador_de_palavras(char pala2);
+void titulo();
+//=========================================Função 2: banco de letras
+char  valida_palavras(char palavra[26])
+{
+  int veri=0;
+int tamanho=0;
+char palavrasombra[26];
+int i;
+  do{
+    veri=0;
+    getchar();
+    tamanho=0;
+scanf("%[^\n]", palavra);
+palavrasombra[26] = tolower(palavra);/// se vc commeça com um numero ele aceita 
+tamanho = strlen(palavrasombra);
+
+  for (i=0; i<tamanho; i++)
+  {
+
+    if (isalpha(palavrasombra[i])){
+    veri= 1;
+  }
+    else 
+  {
+  veri = 2;  
+  }
+  }
+  if(veri==2)
+    titulo();
+    else
+comparador_de_palavras(palavra[26]);
+    }while(veri==2);
+  return palavrasombra[26];
+    }
+//=========================================Função extra: banco de palavras  
+/*char banco_de_palavras ()
+{
+char pala[tam][21] = {"amora","angola","armenia","arte","algebra","aritmetica","banco","banana","brasil","britanico","borboleta","castelo","croacia","pequeno","viver","morrer","lar","uva","odontologia","oftalmologista","ave","lima","hemorragia","linha","rato","malha","dieta","musica","feminino","masculino"};
+
+return pala[tam][21];
+}*/
+//=========================================Função extra: Banco de acetos 
+/*char  banco_de_acertos(char palavras)
+{
+
+}*/
+////=========================================Função 3: comparador  de palavras
+void comparador_de_palavras(char pala2)
+{
+  
+  char pala[tam][26] = {"amora","angola","armenia","arte","algebra","aritmetica","banco","banana","brasil","britanico","borboleta","castelo","croacia","pequeno","viver","morrer","lar","uva","odontologia","oftalmologista","ave","lima","hemorragia","linha","rato","malha","dieta","musica","feminino","masculino"};
+ for(int i=0;i<30;i++)
+   if(pala2==pala[i][26])
+     printf("vc acertou");
+ 
+  
+}
+                                                                                                                                              
+
+
+//=========================================Função 1: titulo 
+void titulo(){
+char palavra[26];
+  printf("==========================\n");
+  printf("\t\tJOGO ANAGRAMA\n");
+  printf("<<Regras do jogo>>\n");
+  printf("->O jogador deve formar palavras especificas com as letras do quadro\n");
+  printf("->Desconsidere os acentos\n");
+  printf("->Existem 30 palavras no total\n");
+  printf("->Maximo de Erros: 5\n");
+  printf("\tBOA SORTE!!!!\n =========================================\n");
+  printf("\t==== B A N C O  D E  L E T R A S ====\n\n \t\t\t   A V B U C Q D\n \t\t\t   P F S T E H R\n \t\t\t   M I O N L G E\n \t\t\t   I L T V A R A\n \t\t\t   O B C R O O N\n");
+printf("Agora Tente adivinhar as palavras com as letras do quadro acima>>>");
+} 
+////==============================================main
+int main() 
+{
+char   palavra[26];
+char  pala2[26];
+titulo();
+
+strcpy(pala2, valida_palavras(palavra));
+for (int i=0;i<20;i++)
+printf("%c", pala2[i]);
+comparador_de_palavras(pala2);
+
+return 0;
+}

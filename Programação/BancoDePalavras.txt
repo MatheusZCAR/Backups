@@ -1,0 +1,49 @@
+<<<==================================>>>
+
+Amora    3-A 2-B 2-C 1-D 1-F 2-E 3-R
+Angola   1-M 4-O 1-G 2-L 2-N 2-I 1-H
+Armenia  2-T 1-S 1-P 1-Q 1-U 2-V 
+Arte
+Algebra
+Aritmetica
+Banco
+Banana
+Brasil
+Britanico
+Borboleta
+Castelo
+Croacia
+Pequeno
+Viver
+Morrer
+Lar
+Uva
+Odontologia
+Oftalmologista
+Ave
+Lima
+Hemorragia
+Linha
+Rato
+Malha
+Dieta
+Musica
+Feminino
+Masculino
+
+
+
+
+L A B R D
+S T E R O
+C O N N G
+P V I H C
+R A B U Q
+E V F I O
+O T M A L
+
+printf("\UOOO2B50");
+
+
+
+

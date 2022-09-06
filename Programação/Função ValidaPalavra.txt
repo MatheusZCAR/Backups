@@ -1,0 +1,29 @@
+char  valida_palavras(char palavraorigi[26])
+{
+  int veri=0;
+int tamanho=0;
+char palavraminus[26];
+int i;
+char palavracomparada[26];
+  do{
+    veri=0;
+    getchar();
+    tamanho=0;
+scanf("%[^\n]", palavraorigi);
+palavraminus[26] = tolower(palavraorigi);/// se vc commeça com um numero ele aceita 
+tamanho = strlen(palavraminus);
+  for (i=0; i<tamanho; i++)
+    if (isalpha(palavraminus[i])){
+    veri=1;
+  }
+    else 
+  {
+  veri=2;  
+  }
+  if(veri==2)
+    titulo();
+    else
+    comparador_de_palavras(palavracomparada);
+    }while(veri==2);
+  return palavraminus[26];
+    }

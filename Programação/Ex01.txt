@@ -1,0 +1,49 @@
+///Matheus Zanon Caritá RA:22014203
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int repeticoes (int X[], int n,int a){
+
+    if (n == 0) return 0;
+
+    if(X[n-1] == a) return 1 + repeticoes(X, n-1, a);
+
+    return repeticoes(X, n-1, a);
+}
+
+
+
+int main()
+{
+    int a;
+    int * X;
+    int i;
+    int n;
+
+
+    printf("Quantidade de elementos do vetor:");
+    scanf("%d", &n);
+
+    X = (int *)calloc(n, sizeof(int));
+    if (X == NULL)
+    {
+        printf("\nErro de alocacao.");
+        exit(1);
+    }
+
+    printf("\nElementos do vetor:");
+
+    for (i = 0; i < n; i++){
+
+        scanf("%d", &X[i]);}
+
+    printf("\nNumero para buscar no vetor:");
+    scanf("%d", &a);
+
+    printf("Quantidade de repeticoes do elemento:");
+    int repete = repeticoes (X, n, a);
+    printf("%d", repete);
+
+    return 0;
+}
